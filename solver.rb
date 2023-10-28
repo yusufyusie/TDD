@@ -2,14 +2,14 @@ class Solver
   def factorial(number)
     raise ArgumentError, 'Factorial is not defined for negative numbers.' if number.negative?
 
-    (1..number).reduce(1, :*)
-    puts result # Output: 120
+    result = (1..number).reduce(1, :*)
+    puts result
     result
   end
 
   def reverse(word)
     result = word.reverse
-    puts result # Output: olleh
+    puts result
     result
   end
 
@@ -23,7 +23,7 @@ class Solver
              else
                number.to_s
              end
-    puts result # Output: fizz, buzz, fizzbuzz, 7
+    puts result
     result
   end
 end
